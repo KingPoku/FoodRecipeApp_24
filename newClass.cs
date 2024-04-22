@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace FoodRecipeApp_24
 {
-    internal class newClass
+    public class newClass
     {
         //did it work
         //
+        public void Test()
+        {
+            int x = 5;
+            if(x < 3)
+            {
+
+            }
+        }
+        
     }
 }
