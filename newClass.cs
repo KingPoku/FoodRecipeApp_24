@@ -15,6 +15,7 @@ namespace FoodRecipeApp_24
             int x = 5;
             if(x < 3)
             {
+                Console.WriteLine("hey");
 
             }
         }
