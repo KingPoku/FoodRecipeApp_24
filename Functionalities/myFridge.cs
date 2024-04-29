@@ -8,5 +8,9 @@ namespace FoodRecipeApp_24.Functionalities
 {
     public class myFridge
     {
+        enum ingridients
+        {
+
+        }
     }
 }
