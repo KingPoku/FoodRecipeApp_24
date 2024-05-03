@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FoodRecipeApp_24.Models.CachedRecipe">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAAAABAAAAAIAAAAAAQAAAAAAAAAAAAAAAAKAAAAAA=</HashCode>
+      <FileName>Models\CachedRecipe.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Recipe" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.RecipeIngredient">
+    <Position X="12.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABABgIAAAAAAAAAAAAAAAAAAAAAAIAAIAiAAIAAA=</HashCode>
+      <FileName>Models\RecipeIngredients.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.UserDietPreference">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAAAAAAAAAAAAAAAAgABAAAABAAACAAAAAAAgA=</HashCode>
+      <FileName>Models\UserDietPreference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.UserFavorites">
+    <Position X="9" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAABAAAAAAgAAgAAAAAAEAAACAAAAAA=</HashCode>
+      <FileName>Models\UserFavorites.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.Admin">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACBIABAECEkhABAAQgCAAIAAEAAAAQAAAAQAQBAAAA=</HashCode>
+      <FileName>Models\Admin.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+      <Property Name="Recipe" />
+      <Property Name="UserFavorites" />
+      <Property Name="UserDietPreference" />
+      <Property Name="ShoppingList" />
+      <Property Name="FridgeInventory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.Diet" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAACAQAhAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Diet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.FridgeInventory">
+    <Position X="1" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAwAAAAAAAAAAAAAAgIQAAAAAAAAAAAgAgAAAA=</HashCode>
+      <FileName>Models\FridgeInventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.Ingredient" Collapsed="true">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQgAAAgAAAAACAAAQQAAAAQABAABAAAAAAACAA=</HashCode>
+      <FileName>Models\Ingredient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.MealPlan">
+    <Position X="7.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAABAAAACAgIAACIAAAgAAAAAAAABAAAACAAAAAA=</HashCode>
+      <FileName>Models\MealPlan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.MealType">
+    <Position X="1" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAAAAAAAAAAAAAAAAAAAQAAAAACAAAAAAACCAAAAA=</HashCode>
+      <FileName>Models\MealType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.Recipe">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAUABAAAAgAAAAAAAAABQEAAAIAABAgAAACAAAAAA=</HashCode>
+      <FileName>Models\Recipe.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RecipeIngredient" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.User">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAEAAACEkkAAAAQgCAAwEIAgAIAQAAEEQAQBwAAg=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserDietPreference" />
+      <Property Name="MealPlan" />
+      <Property Name="UserFavorites" />
+      <Property Name="ShoppingList" />
+      <Property Name="FridgeInventory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodRecipeApp_24.Models.ShoppingList">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABRAAgAAAAAAAAAAAAAAgAgAAAAAAEAAAAgAAAAAA=</HashCode>
+      <FileName>Models\ShoppingList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
