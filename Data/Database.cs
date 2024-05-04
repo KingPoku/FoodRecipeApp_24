@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySqlConnector;
 
 namespace FoodRecipeApp_24.Data
@@ -16,7 +12,7 @@ namespace FoodRecipeApp_24.Data
         public Database(string server, int port, string database, string username, string password)
         {
             // Construct the connection string
-            connectionString = "server=127.0.0.1;port=3306;database=foodrecipeapp_24;user=root;password=;";
+            connectionString = $"server={server};port={port};database={database};user={username};password={password};";
 
             // Initialize the connection object
             connection = new MySqlConnection(connectionString);
@@ -57,20 +53,47 @@ namespace FoodRecipeApp_24.Data
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
-                {
-                    connection.Open();
+                connection.Open(); // Open the connection
 
-                    MySqlCommand command = new MySqlCommand(query, connection);
-                    object result = command.ExecuteScalar();
+                MySqlCommand command = new MySqlCommand(query, connection);
+                object result = command.ExecuteScalar();
 
-                    Console.WriteLine("Connection test successful.");
-                    Console.WriteLine("MySQL version: " + result);
-                }
+                Console.WriteLine("Connection test successful.");
+                Console.WriteLine("MySQL version: " + result);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close(); // Close the connection
+            }
+        }
+
+        // Method to add a user to the database
+        public void AddUser(string name, int id)
+        {
+            string query = "INSERT INTO users (name, id) VALUES (@name, @id)";
+
+            try
+            {
+                connection.Open();
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@name", "Armin");
+                command.Parameters.AddWithValue("@id", "56");
+
+                int rowsAffected = command.ExecuteNonQuery();
+                Console.WriteLine($"{rowsAffected} row(s) inserted.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
             }
         }
 
