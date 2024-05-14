@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FoodRecipeApp_24
+namespace FoodRecipeApp_24.webPages
 {
     /// <summary>
-    /// Interaction logic for Profile.xaml
+    /// Interaction logic for AddRecipe.xaml
     /// </summary>
-    public partial class Profile : Page
+    public partial class AddRecipe : Page
     {
-        public Profile()
+        public AddRecipe()
         {
             InitializeComponent();
-        }
-
-        private void EditPic_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FoodRecipeApp_24.View.UserControls
+namespace FoodRecipeApp_24.webPages
 {
     /// <summary>
-    /// Interaction logic for MenuBar.xaml
+    /// Interaction logic for MyFridge.xaml
     /// </summary>
-    public partial class MenuBar : UserControl
+    public partial class MyFridge : Page
     {
-        public MenuBar()
+        public MyFridge()
         {
             InitializeComponent();
         }

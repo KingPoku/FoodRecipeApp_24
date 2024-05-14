@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="FoodRecipeApp_24.View.UserControls.MenuBarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FoodRecipeApp_24.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="225">
+    <Grid Background="White" HorizontalAlignment="Left" Width="225">
+        <Menu HorizontalAlignment="Left" Height="331" Width="175" Margin="25,70,0,0">
+            <Button Content="Profile" Height="39" Width="159" Click="Profile_Click" Tag="prof"/>
+            <Button Content="My Fridge" Height="39" Width="159" Click="MyFridge_Click" Tag="fridge"/>
+            <Button Content="My favourites" Height="39" Width="159" Click="Myfavourites_Click" Tag="fav"/>
+            <Button Content="Add recipe" Height="39" Width="159" Click="AddRecipe_Click" Tag="addRecipe"/>
+            <Button Content="FAQs" Height="39" Width="159" Click="FAQs_Click" Tag="faqs"/>
+            <Button Content="Settings" Height="39" Width="159" Click="Settings_Click" Tag="stngs"/>
+            <Button Content="About Us" Height="39" Width="159" Click="AboutUs_Click" Tag="abt"/>
+            <Button Content="Reviews" Height="39" Width="159" Click="Reviews_Click" Tag="revs"/>
+        </Menu>
+
+
+    </Grid>
+</UserControl>

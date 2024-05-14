@@ -1,27 +1,72 @@
-﻿<Window x:Class="FoodRecipeApp_24.mainwindow"
+﻿<Window x:Class="FoodRecipeApp_24.Mainwindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodRecipeApp_24"
-        xmlns:MenuBar="clr-namespace:FoodRecipeApp_24.View.UserControls"
+        xmlns:userControls="clr-namespace:FoodRecipeApp_24.View.UserControls"
         mc:Ignorable="d"
         Title="mainwindow" Height="450" Width="800">
-    <Grid>
-        <Grid Height="75" VerticalAlignment="Top">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="25*"/>
-                <RowDefinition Height="75*"/>
-            </Grid.RowDefinitions>
-        </Grid>
+    
+    <Grid Background="White">
+        <!--Main frame to load pages onto-->
+        <Frame Grid.ColumnSpan="2" x:Name="homeMainFrame"/>
 
+        <!--Navigation menu-->
+        <userControls:MenuBarView Grid.Column="0"/>
+
+        <!--Grid division for better design aid-->
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="25*"/>
-                <ColumnDefinition Width="75*"/>
+                <ColumnDefinition Width="35*"/>
+                <ColumnDefinition Width="85*"/>
             </Grid.ColumnDefinitions>
         </Grid>
-        <MenuBar:MenuBar/>
+
+        <!--Secondary frame to load search results onto-->
+        <Frame Grid.Column="1" x:Name="searchResultFrame"/>
+
+        <!--Search box and button-->
+        <TextBox Grid.Column="1" Height="29" Width="180" VerticalAlignment="Top"
+          HorizontalAlignment="Right" Margin="0,8,47,0"/>
+        <Button VerticalAlignment="Top" HorizontalAlignment="Right" 
+         Height="25" Width="30" Grid.Column="1" Margin="0,10,15,0">
+            <Button.Background>
+                <ImageBrush ImageSource="{Binding SearchPic}"/>
+            </Button.Background>
+        </Button>
+
+        <!--Stack panel to hold main display and recipes-->
+        <StackPanel Orientation="Vertical" Margin="235,55,10,10">
+            <Label Content="Daily Recommendations" Height="40" Width="250" FontSize="20" 
+                    FontWeight="Bold" FontFamily="Georgia Pro Semibold" />
+            <StackPanel Height="140" Orientation="Horizontal" Margin="0,10,0,0">
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                           Width="180" Fill="#FFE2E2E2" 
+                           Margin="0,0,5,0"/>
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                           Width="180" Fill="#FFE2E2E2" 
+                           Margin="0,0,5,0"/>
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                           Width="180" Fill="#FFE2E2E2" 
+                           Margin="0,0,0,0"/>
+            </StackPanel>
+            <Label Content="Categories" Height="40" Width="250" FontSize="20" 
+                   FontWeight="Bold" FontFamily="Georgia Pro Semibold" />
+            <StackPanel Height="140" Orientation="Horizontal" Margin="0,10,0,0" >
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                           Width="180" Fill="#FFE2E2E2" 
+                           Margin="0,0,5,0"/>
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                           Width="180" Fill="#FFE2E2E2" 
+                           Margin="0,0,5,0"/>
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                           Width="180" Fill="#FFE2E2E2" 
+                           Margin="0,0,0,0"/>
+            </StackPanel>
+
+        </StackPanel>
+
 
 
     </Grid>

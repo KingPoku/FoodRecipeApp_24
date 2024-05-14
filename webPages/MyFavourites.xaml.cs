@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FoodRecipeApp_24
+namespace FoodRecipeApp_24.webPages
 {
     /// <summary>
-    /// Interaction logic for HomePage.xaml
+    /// Interaction logic for MyFavourites.xaml
     /// </summary>
-    public partial class HomePage : Page
+    public partial class MyFavourites : Page
     {
-        public HomePage()
+        public MyFavourites()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
