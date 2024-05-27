@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FoodRecipeApp_24"
         xmlns:userControls="clr-namespace:FoodRecipeApp_24.View.UserControls"
         mc:Ignorable="d"
-        Title="mainwindow" Height="450" Width="800">
+        Title="mainwindow" Height="465" Width="800">
     
     <Grid Background="White">
         <!--Main frame to load pages onto-->
